@@ -2,6 +2,9 @@
 .DS_Store
 Thumbs.db
 
+
+hello_world.html #Dont add the hello world web page
+
 # Editor-specific files
 .vscode/
 .idea/
