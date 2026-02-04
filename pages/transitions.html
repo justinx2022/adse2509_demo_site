@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSE2509 Demosite - Transitions</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <!--Internal stylesheet that will be used to illustrate CSS transitions-->
+    <style>
+        #transition {
+            width: 150px;
+            height: 150px;
+            background-color: #f00;
+            transition: background 2s ease-out, width 2s ease-out, height 2s ease-out;
+            margin: 50px auto;
+            border: 1px solid black;
+        }
+
+        #transition:hover {
+            width: 250px;
+            height: 250px;
+            background-color: #f00;
+        }
+
+        .btn {
+            background-color: #00a5ff;
+            color: #0a00fd;
+            transition: all 1s ease-out;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0074b2;
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="main-nav">
+        <button id="menu-toggle" aria-label="Toggle Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <ul id="nav-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="text-formatting.html">Text Formatting</a></li>
+            <li><a href="lists.html">Lists</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="tables.html">Tables</a></li>
+            <li><a href="forms.html">Forms</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="#">CSS</a>
+                <ul>
+                    <li><a href="transitions.html">Transitions</a></li>
+                    <li><a href="tranformations.html">Transformations</a></li>
+                    <li><a href="animations.html">Animations</a></li>
+                </ul>
+            </li>
+            <li><a href="pagelayout.html">CSS Flexbox and Grid Layout</a></li>
+            <li><a href="#">JS</a>
+                <ul>
+                    <li><a href="js_pages/js_intro.html">JS INTRO</a></li>
+                    <li><a href="js_pages/js_selection.html">JS SELECTION</a></li>
+                    <li><a href="js_pages/js_intro.html">JS INTRO</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <h1>CSS Transitions</h1>
+
+        <div id="transition"></div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <button class="btn">Hover me</button>
+        </div>
+
+        <div class="page-footer">
+            ADSE2509 copyright &copy; 2024 - 2026<br>
+            Designed by <a href="#">Justin Odhiambo</a>.
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+    <script async src="../../js/responsive_nav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,445 @@
+========================================
+File: adse2509_demo_site\index.html
+========================================
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSE2509 Demosite - Home</title>
+</head>
+
+<body>
+    <h1>Welcome to the ADSE2509 Demosite ✨🎉</h1>
+    <p>This site illustrates various concept that are used in creating modernistic websites.</p>
+    <footer>ADSE2509 copyright &copy; 2024 - 2025 <!-- TODO: use js to update year automatically -->
+        Designed by Nyanjui Designs. <!-- TODO: make this a link to designer's portfolio -->
+    </footer>
+</body>
+
+</html>
+
+
+
+========================================
+File: adse2509_demo_site\pages\images.html
+========================================
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSE2509 Demosite - Images</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+        .social-links a {
+            margin: 0 10px;
+            font-size: 1.1em;
+        }
+
+        h1.main-title {
+            color: red;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .footer {
+            color: #ffca28;
+            text-align: center;
+            margin-top: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1 style="color: #ff8800; font-family: 'Lobster', cursive; text-align: center;">Follow us on social media</h1>
+        <div class="social-links" style="text-align: center; margin-bottom: 40px;">
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://youtube.com" target="_blank">youtube</a>
+            <a href="https://github.com" target="_blank">github</a>
+            <a href="https://x.com" target="_blank">x</a>
+            <a href="https://facebook.com" target="_blank">facebook</a>
+            <a href="https://instagram.com" target="_blank">instagram</a>
+            <a href="https://behance.net" target="_blank">behance</a>
+        </div>
+
+        <h1 class="main-title">HTML Images</h1>
+
+        <p style="font-size: 1.2em; text-align: center;">An image is some graphic or picture. Images are what give life
+            to your webpage.</p>
+        <p style="font-size: 1.2em; text-align: center;">Below are some images of a fictitious dessert parlour.</p>
+
+        <h3 class="section-heading">Cakes</h3>
+        <section class="gallery">
+            <figure class="item">
+                <img src="../images/cakes/choc_honeycomb_cake.jpg" alt="Chocolate honeycomb cake" loading="lazy">
+                <figcaption>
+                    <p>Description of chocolate honeycomb cake</p>
+                    <p class="price">2000</p>
+                </figcaption>
+            </figure>
+            <figure class="item">
+                <img src="../images/cakes/chocolate-raspberry-mousse cake.jpg" alt="Chocolate raspberry mousse cake"
+                    loading="lazy">
+                <figcaption>
+                    <p>Description of the Chocolate raspberry mousse cake</p>
+                    <p class="price">2000</p>
+                </figcaption>
+            </figure>
+            <figure class="item">
+                <img src="../images/cakes/mint_party_cake.jpg" alt="Mint party cake" loading="lazy">
+                <figcaption>
+                    <p>Description of the mint party cake</p>
+                    <p class="price">3000</p>
+                </figcaption>
+            </figure>
+            <figure class="item">
+                <img src="../images/cakes/vanilla_with_strawberry_cake.jpg" alt="Vanilla with strawberries cake"
+                    loading="lazy">
+                <figcaption>
+                    <p>Description of vanilla with strawberries cake</p>
+                    <p class="price">3500</p>
+                </figcaption>
+            </figure>
+        </section>
+
+        <h3 class="section-heading">Fruit Salads</h3>
+        <section class="gallery">
+            <figure class="item">
+                <img src="../images/fruit_salads/red-Fruit-Salad.jpg" alt="Red fruit salad" loading="lazy">
+                <figcaption>
+                    <p>Description of the red fruit salad</p>
+                    <p class="price">500</p>
+                </figcaption>
+            </figure>
+            <figure class="item">
+                <img src="../images/fruit_salads/Green-Fruit-Salad.jpg" alt="Green fruit salad" loading="lazy">
+                <figcaption>
+                    <p>Description of the Green fruit salad</p>
+                    <p class="price">300</p>
+                </figcaption>
+            </figure>
+            <figure class="item">
+                <img src="../images/fruit_salads/kiwi_strawberry_vanilla_salad.jpg"
+                    alt="Kiwi strawberry and vanilla fruit salad" loading="lazy">
+                <figcaption>
+                    <p>Description of the Kiwi strawberry and vanilla fruit salad</p>
+                    <p class="price">450</p>
+                </figcaption>
+            </figure>
+        </section>
+
+        <h3 class="section-heading">Veggie Salads</h3>
+        <section class="gallery">
+            <figure class="item">
+                <img src="../images/veggie_salads/roasted_veggie_salad.jpg" alt="Roasted vegetable salad"
+                    loading="lazy">
+                <figcaption>
+                    <p>Description of the roasted vegetable salad</p>
+                    <p class="price">450</p>
+                </figcaption>
+            </figure>
+            <figure class="item">
+                <img src="../images/veggie_salads/rainbow_veggie_salad.jpg" alt="Rainbow vegetable salad"
+                    loading="lazy">
+                <figcaption>
+                    <p>Description of the Rainbow vegetable salad</p>
+                    <p class="price">550</p>
+                </figcaption>
+            </figure>
+        </section>
+
+        <div class="page-footer">
+            ADSE2509 copyright &copy; 2024 - 2026<br>
+            Designed by <a href="#">Justin Odhiambo</a>.
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+========================================
+File: adse2509_demo_site\pages\links.html
+========================================
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSE2509 Demosite - HTML LINKS</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1 class="page heading">HTML LINKS</h1>
+        <p>An HTML hyperlink is a link to another web page or resource.They This page illustrates the use of links in a
+            webpage</p>
+        <h3 class="section-heading">Bookmarks or Named Anchors</h3>
+        <p>These link you to different parts of the same webpage. Visit different parts of this page by clicking the
+            bookmarks below</p>
+        <ul>
+            <li><a href="#sec1">Section 1</a></li>
+            <li><a href="#sec2">Section 2</a></li>
+            <li><a href="#sec3">Section 3</a></li>
+            <li><a href="#sec4">Section 4</a></li>
+        </ul>
+
+        <h3 class="section-heading">Relative or Internal Links</h3>
+        <p>These link you to different parts of the same website</p>
+        Visit the <a href="../index.html">Home Page</a><br>
+        Visit the <a href="lists.html">Lists Page</a>
+
+        <h3 class="section-heading">External or Absolute Links</h3>
+        <p>These link you to a different website. Ensure you open these in different tabs
+            to prevent closing your website.</p>
+        Visit the <a href="https://www.edulink.ac.ke" target="_blank">Edulink Website</a><br>
+        Visit the <a href="https://aptech-education.com" target="_blank">Aptech Website</a>
+
+        <p>Telephone and email links are illustrated below<br>
+            Email me : <a href="mailto:n.arthur@edulink.ac.ke">n.arthur(at)edulink.ac.ke</a><br>
+            Give me a call on <a href="tel:+254734349023">+254 734349023</a></p>
+
+        <br>
+        <p><a id="sec1">Section 1</a><br> תַּחַת גן סג גר בם. רעו אָנֹכִי מאד שאר כמו הנה מהלמוּת ראש וכשניסה. .
+            שֶׁסִּפֵּר עַגְבָנִית
+            שֶׁהָיְתָה שֶׁבֵּינוֹ בְּצָהֳלַת. כְּרוֹמֵז פסק כַּאֲשֶׁר זעם בְּקֹשִׁי ומקלותיהם פנה וָאֶקְרָא עלו שפך
+            נְחוּצוֹת לקח. דְּמָמָה אוֹחֶזֶת מֵהָצִיק בִּימוֹת. גְבוּרָה הַכֵּהָה וּבָאתִי המיוחסות. מימי קר פה פי ובעל
+            כן אחרת הבאה שכמם גן שם. חלם אמו קפא =יחידת עצת טעם מדי. יד חוֹבָתָם אף ולעבודתו זה זר בִּגְדֵי והפועלים. .
+            בִּמְלוֹא בת לַאדוֹנִי פִּלְּלוּ כך יִנְהֲרוּ זו גם רִגְשׁוֹת. זֵכֶר יַחַד הכובע יעזוב. לשד והם לזה שנה מהן
+            רָב הסב. איך קשר ורק הקיפו הייתה אפו לסבול מַה העביר תעו משה בצלחת. צד לא חי זר אש כי גן. שבו זח</p>
+
+        <p><a id="sec2">Section 2</a><br> ה תשע פרי אֶת חמש ברח רעם. כך גר קל כל רה לא גז. =יחידת. . בעד ומה הדל יין ישא
+            להם סוס בדפקו הרחבה
+            ובשאט. אם או לך עד חת רץ גל זו. ומר עלו קרא אשר אחי חשו. כפר גַם ﻿תַּחַת כאל הדף שבע. מְחִירָם מעט האחרונים
+            הרם זרע תְּכֵלֶת שני כסף נשק שאר. הָאַגָּדָה פרה שֶׁבֵּינוֹ בחו גמר אחי ראה הים בְּשָׂרָהּ חדל. לבך ראש הזה
+            חוץ ועם אפי. זר מי עם קל גן אז תה חש. כל סר אח קר. אבל במלחמותיו פרק הליכותיהם כְּחוֹטֵא לזה שמן פגש יַד
+            חֲלוֹמוֹת כבן. במה ערב גדל רצו פרי. רע דם בז גז. חוט לערמה צעק החל לשלום קצף ואמנם קשת. כאב מזה נצא עלם.
+            ﻿תַּחַת את בז עת נא. וּבָאֲוִיר יְתֻקְּנוּ וכל שֶׁסִּפֵּר אמה ורץ ידו כזה רוֹחֲשִׁים. רץ בצער ודיו לדוד או
+            במעט בה עת. בִּקְצֵה מי יש בי שבסביבות מְלֵאִים על מֵהָצִיק ההתנפלות כן הָגִיתִי כך עד. לָגֶשֶׁת ולהובילם
+            וְכַחֵשׁ ומ</p>
+
+        <p><a id="sec3">Section 3</a><br> פותחים ולהפחידו דְחִיפָה. אותנו זכותו וטבעם בזיעת חרוּץ. פְּתָחָיו הַנֹּגַהּ
+            וּצְמֵאָה פָּנֵינוּ
+            מְשׁוֹרֵר לְאָכְלָה. =יחידת לבך מכף פגה הבן קֵץ וכה עצת הכל. בִּמְלוֹא מִקְסְמֵי חם בָּרְחוֹב יִסּוּרֵי על
+            הַיּוֹתֵר רב רְצוּפִים תה. אֵי חוף מֶה הבל ככל אבד תדע. יִסּוּרֵי הַפָּחוּת בְּלִבִּי רַגְלֶיהָ לְשָׁלוֹם.
+            וכי אשר מדי בבחירות והתמלאו לבו קוממיות אָזְנֵי עשר שעו חוף לוּ. שונים נקשרו מפניה הורמו משק כלא קני עמד
+            קנאתם. אי לך רעות שׁ בם כעוף די שָׁם איכר לאות. ﻿תַּחַת. והירחונים שעו הָאֲפֵלָה ראש קרב קשת אבד זאת
+            הַשָּׂדֶה באו פרי. ﻿תַּחַת. החי ואל סער לבם פתח. קם פה גז אש לה בה. . ודם כל</p>
+
+        <p><a id="sec4">Section 4</a><br> ב חצר סער באו צֵל. יש בה בן הר. לא קל כן רה של =יחידת. תשע יקר בסד חום שאל ואם
+            אוֹ. . קיץ
+            אָמַרְתִּי מאת ומר רכי בְּתַאֲוַת וְנַפְשִׁי וְקָדִימָה הָרְחוֹקָה הדל לבן לִי. =יחידת. לִהְיוֹת עץ הַחַמָּה
+            זר סר מקלותיהם של לְגַבֵּי. נחת ביד שנת נצא גבי רעל לִי. הַבִּרְיָה אל כְּפוּפוֹת בַּקָּשָׁה שֶׁסִּפֵּר אב
+            מה שׁ יְצַרְתָּם צד הר. מכה פגש ישב לכם מכת מלב. או רב של רה אש. חמה נפש כוח החל ומר מלה מָה ראו. רה
+    </div>
+</body>
+
+</html>
+
+
+
+========================================
+File: adse2509_demo_site\pages\text-formatting.html
+========================================
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formatting</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1 class="page heading">Text Formatting Examples</h1>
+        <p>This page illustrates the use of various text formatting tags in HTML.</p>
+
+        <h3 class="section-heading">Bold and Strong Text</h3>
+        <p>The <b>b element</b> makes text bold without extra importance.</p>
+        <p>The <strong>strong element</strong> defines text with strong importance (usually displayed in bold).</p>
+
+        <h3 class="section-heading">Italic and Emphasized Text</h3>
+        <p>The <i>i element</i> makes text italic (e.g. for technical terms).</p>
+        <p>The <em>em element</em> indicates emphasized text (displayed in italic).</p>
+
+        <h3 class="section-heading">Subscript and Superscript</h3>
+        <p>This is <sub>subscript</sub> text (e.g. H<sub>2</sub>O).</p>
+        <p>This is <sup>superscript</sup> text (e.g. E = mc<sup>2</sup>).</p>
+
+        <h3 class="section-heading">Highlighted and Small Text</h3>
+        <p>The <mark>mark element</mark> defines marked/highlighted text.</p>
+        <p>The <small>small element</small> defines smaller text (often used for copyright or fine print).</p>
+
+        <h3 class="section-heading">Deleted and Inserted Text</h3>
+        <p>The <del>del element</del> defines text that has been deleted from a document.</p>
+        <p>The <ins>ins element</ins> defines a text that has been inserted into a document.</p>
+
+        <h3 class="section-heading">Preformatted Text</h3>
+        <p>The pre element defines preformatted text. It preserves both spaces and line breaks:</p>
+        <pre>
+    Text in a pre element
+    is displayed in a fixed-width
+    font, and it preserves
+    both      spaces and
+    line breaks
+</pre>
+    </div>
+</body>
+
+</html>
+
+
+
+========================================
+File: adse2509_demo_site\css\main.css
+========================================
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    background-image: url('../image/milky-way.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(20, 20, 30, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-heading {
+    font-family: 'IT Graflo Demo';
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+h1.page.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 15px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+h3.section-heading {
+    color: #4db8ff;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-left: 4px solid #4db8ff;
+    padding-left: 12px;
+}
+
+a {
+    color: #ffca28;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+    text-shadow: 0 0 8px rgba(255, 202, 40, 0.6);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    display: inline-block;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+/* Gallery Styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.item img {
+    max-width: 100%;
+    border-radius: 4px;
+    height: auto;
+    object-fit: cover;
+}
+
+.price {
+    color: #ffca28;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+ul li a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(5px);
+}
+
+/* Style the page footer using a class selector */
+.page-footer {
+    color: #ff8800;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-family: "Lobster", cursive;
+}
+
+
+

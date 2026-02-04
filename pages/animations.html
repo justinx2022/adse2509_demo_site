@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSE2509 Demosite - Animations</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <!--Internal stylesheet that will be used to illustrate CSS animations -->
+    <style>
+        .social-links a {
+            margin: 0 10px;
+            font-size: 1.1em;
+        }
+
+        #anim_div {
+            width: 150px;
+            height: 150px;
+            background-color: #f00;
+            margin: 50px auto;
+            position: relative;
+            animation-name: myAnimation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes myAnimation {
+            0% {
+                transform: rotate(0deg);
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                transform: rotate(90deg);
+                left: 200px;
+                background-color: #ff0;
+            }
+
+            50% {
+                background-color: #00f;
+                left: 200px;
+                transform: rotate(180deg);
+                top: 200px;
+            }
+
+            75% {
+                background-color: #0f0;
+                left: 0px;
+                transform: rotate(270deg);
+                top: 200px;
+            }
+
+            100% {
+                background-color: #f00;
+                left: 0px;
+                top: 0px;
+                transform: rotate(360deg);
+            }
+        }
+
+        .btn {
+            background-color: #00a5ff;
+            color: #0a00fd;
+            transition: all 1s ease-out;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0074b2;
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="main-nav">
+        <button id="menu-toggle" aria-label="Toggle Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <ul id="nav-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="text-formatting.html">Text Formatting</a></li>
+            <li><a href="lists.html">Lists</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="#">CSS</a>
+                <ul>
+                    <li><a href="transitions.html">Transitions</a></li>
+                    <li><a href="tranformations.html">Transformations</a></li>
+                    <li><a href="animations.html">Animations</a></li>
+                </ul>
+            </li>
+            <li><a href="pagelayout.html">CSS Flexbox and Grid Layout</a></li>
+            <li><a href="#">JS</a>
+                <ul>
+                    <li><a href="js_pages/js_intro.html">JS INTRO</a></li>
+                    <li><a href="js_pages/js_selection.html">JS SELECTION</a></li>
+                    <li><a href="js_pages/js_intro.html">JS INTRO</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <h1 style="color: #ff8800; font-family: 'Lobster', cursive; text-align: center;">Follow us on social media</h1>
+        <div class="social-links" style="text-align: center; margin-bottom: 40px;">
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://youtube.com" target="_blank">youtube</a>
+            <a href="https://github.com" target="_blank">github</a>
+            <a href="https://x.com" target="_blank">x</a>
+            <a href="https://facebook.com" target="_blank">facebook</a>
+            <a href="https://instagram.com" target="_blank">instagram</a>
+            <a href="https://behance.net" target="_blank">behance</a>
+        </div>
+
+        <h1>CSS Animations</h1>
+
+        <p>A CSS animation is a process of changing an element property over a given duration of time without need for
+            JavaScript. You can change an element size, color and even rotate it to name a few. To create a CSS
+            animation, you need keyframes which define how the animated element will render/display at a given time</p>
+
+        <div id="anim_div"></div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <button class="btn">Hover me</button>
+        </div>
+
+        <div class="page-footer">
+            ADSE2509 copyright &copy; 2024 - 2026<br>
+            Designed by <a href="#">Justin Odhiambo</a>.
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+    <script async src="../../js/responsive_nav.js"></script>
+</body>
+
+</html>

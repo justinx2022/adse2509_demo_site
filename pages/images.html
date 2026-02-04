@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSE2509 Demosite - Images</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+        .social-links a {
+            margin: 0 10px;
+            font-size: 1.1em;
+        }
+
+        h1.main-title {
+            color: red;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .footer {
+            color: #ffca28;
+            text-align: center;
+            margin-top: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="main-nav">
+        <button id="menu-toggle" aria-label="Toggle Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <ul id="nav-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="text-formatting.html">Text Formatting</a></li>
+            <li><a href="lists.html">Lists</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="tables.html">Tables</a></li>
+            <li><a href="forms.html">Forms</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="#">CSS</a>
+                <ul>
+                    <li><a href="transitions.html">Transitions</a></li>
+                    <li><a href="tranformations.html">Transformations</a></li>
+                    <li><a href="animations.html">Animations</a></li>
+                </ul>
+            </li>
+            <li><a href="pagelayout.html">CSS Flexbox and Grid Layout</a></li>
+            <li><a href="#">JS</a>
+                <ul>
+                    <li><a href="js_pages/js_intro.html">JS INTRO</a></li>
+                    <li><a href="js_pages/js_selection.html">JS SELECTION</a></li>
+                    <li><a href="js_pages/js_intro.html">JS INTRO</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="container">
+        <h1 style="color: #ff8800; font-family: 'Lobster', cursive; text-align: center;">Follow us on social media</h1>
+        <div class="social-links" style="text-align: center; margin-bottom: 40px;">
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://youtube.com" target="_blank">youtube</a>
+            <a href="https://github.com" target="_blank">github</a>
+            <a href="https://x.com" target="_blank">x</a>
+            <a href="https://facebook.com" target="_blank">facebook</a>
+            <a href="https://instagram.com" target="_blank">instagram</a>
+            <a href="https://behance.net" target="_blank">behance</a>
+        </div>
+
+        <h1 class="main-title">HTML Images</h1>
+
+        <p style="font-size: 1.2em; text-align: center;">An image is some graphic or picture. Images are what give life
+            to your webpage.</p>
+        <p style="font-size: 1.2em; text-align: center;">Below are some images of a fictitious dessert parlour.</p>
+
+        <h3 class="section-heading">Cakes</h3>
+        <section class="gallery">
+            <figure class="item">
+                <img src="../images/cakes/choc_honeycomb_cake.jpg" alt="Chocolate honeycomb cake" loading="lazy" />
+                <figcaption>
+                    <p>Description of the Chocolate honeycomb cake</p>
+                    <p class="price">1500</p>
+                </figcaption>
+            </figure>
+            <figure class="item">
+                <img src="../images/cakes/chocolate-raspberry-mousse cake.jpg" alt="Chocolate raspberry mousse cake"
+                    loading="lazy">
+                <figcaption>
+                    <p>Description of the Chocolate raspberry mousse cake</p>
+                    <p class="price">2000</p>
+                </figcaption>
+            </figure>
+            <figure class="item">
+                <img src="../images/cakes/mint_party_cake.jpg" alt="Mint party cake" loading="lazy">
+                <figcaption>
+                    <p>Description of the mint party cake</p>
+                    <p class="price">3000</p>
+                </figcaption>
+            </figure>
+            <figure class="item">
+                <img src="../images/cakes/vanilla_with_strawberry_cake.jpg" alt="Vanilla with strawberries cake"
+                    loading="lazy">
+                <figcaption>
+                    <p>Description of vanilla with strawberries cake</p>
+                    <p class="price">3500</p>
+                </figcaption>
+            </figure>
+        </section>
+
+        <h3 class="section-heading">Fruit Salads</h3>
+        <section class="gallery">
+            <figure class="item">
+                <img src="../images/fruit_salads/red-Fruit-Salad.jpg" alt="Red fruit salad" loading="lazy">
+                <figcaption>
+                    <p>Description of the red fruit salad</p>
+                    <p class="price">500</p>
+                </figcaption>
+            </figure>
+            <figure class="item">
+                <img src="../images/fruit_salads/Green-Fruit-Salad.jpg" alt="Green fruit salad" loading="lazy">
+                <figcaption>
+                    <p>Description of the Green fruit salad</p>
+                    <p class="price">300</p>
+                </figcaption>
+            </figure>
+            <figure class="item">
+                <img src="../images/fruit_salads/kiwi_strawberry_vanilla_salad.jpg"
+                    alt="Kiwi strawberry and vanilla fruit salad" loading="lazy">
+                <figcaption>
+                    <p>Description of the Kiwi strawberry and vanilla fruit salad</p>
+                    <p class="price">450</p>
+                </figcaption>
+            </figure>
+        </section>
+
+        <h3 class="section-heading">Veggie Salads</h3>
+        <section class="gallery">
+            <figure class="item">
+                <img src="../images/veggie_salads/roasted_veggie_salad.jpg" alt="Roasted vegetable salad"
+                    loading="lazy">
+                <figcaption>
+                    <p>Description of the roasted vegetable salad</p>
+                    <p class="price">450</p>
+                </figcaption>
+            </figure>
+            <figure class="item">
+                <img src="../images/veggie_salads/rainbow_veggie_salad.jpg" alt="Rainbow vegetable salad"
+                    loading="lazy">
+                <figcaption>
+                    <p>Description of the Rainbow vegetable salad</p>
+                    <p class="price">550</p>
+                </figcaption>
+            </figure>
+        </section>
+
+        <div class="page-footer">
+            ADSE2509 copyright &copy; 2024 - 2026<br>
+            Designed by <a href="#">Justin Odhiambo</a>.
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+    <script async src="../js/responsive_nav.js"></script>
+</body>
+
+</html>

@@ -5,14 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADSE2509 Demosite - Home</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <h1>Welcome to the ADSE2509 Demosite ✨🎉</h1>
-    <p>This site illustrates various concept that are used in creating modernistic websites.</p>
-    <footer>ADSE2509 copyright &copy; 2024 - 2025 <!-- TODO: use js to update year automatically -->
-        Designed by Justin Designs. <!-- TODO: make this a link to designer's portfolio -->
-    </footer>
+    <nav id="main-nav">
+        <button id="menu-toggle" aria-label="Toggle Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/text-formatting.html">Text Formatting</a></li>
+            <li><a href="pages/lists.html">Lists</a></li>
+            <li><a href="pages/links.html">Links</a></li>
+            <li><a href="pages/images.html">Images</a></li>
+            <li><a href="#">CSS</a>
+                <ul>
+                    <li><a href="pages/transitions.html">Transitions</a></li>
+                    <li><a href="pages/tranformations.html">Transformations</a></li>
+                    <li><a href="pages/animations.html">Animations</a></li>
+                </ul>
+            </li>
+            <li><a href="pages/pagelayout.html">CSS Flexbox and Grid Layout</a></li>
+            <li><a href="tables.html">Tables</a></li>
+            <li><a href="forms.html">Forms</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="#">JS</a>
+                <ul>
+                    <li><a href="js_pages/js_intro.html">JS INTRO</a></li>
+                    <li><a href="js_pages/js_selection.html">JS SELECTION</a></li>
+                    <li><a href="js_pages/js_intro.html">JS INTRO</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <script src="js/main.js"></script>
+
+
+
+
+    <div id="container">
+        <h1>Welcome to the ADSE2509 Demosite ✨🎉</h1>
+        <p>This site illustrates various concept that are used in creating modernistic websites.</p>
+        <div class="page-footer">
+            ADSE2509 copyright &copy; 2024 - 2026<br>
+            Designed by <a href="#">Justin Odhiambo</a>.
+        </div>
+    </div>
 </body>
 
 </html>

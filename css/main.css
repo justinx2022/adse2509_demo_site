@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../image/milky-way.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(20, 20, 30, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.flex-item {
+    margin: 5px;
+}
+
+.flex-item,
+.grid-item {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    padding: 10px;
+    gap: 10px;
+}
+
+.social-heading {
+    font-family: 'IT Graflo Demo';
+    color: #ff9900;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+.page-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ff3300;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 15px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.section-heading {
+    color: #4db8ff;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-left: 4px solid #4db8ff;
+    padding-left: 12px;
+}
+
+a {
+    color: #ffca28;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+    text-shadow: 0 0 8px rgba(255, 202, 40, 0.6);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    display: inline-block;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+/* Gallery Styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.item img {
+    max-width: 100%;
+    border-radius: 4px;
+    height: auto;
+    object-fit: cover;
+}
+
+.price {
+    color: #ffca28;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+ul li a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(5px);
+}
+
+/* Style the page footer using a class selector */
+.page-footer {
+    color: #ff8800;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-family: "Lobster", cursive;
+}
+
+/* Import the local font face */
+@font-face {
+    font-family: 'IT Graflo Demo';
+    src: url('../webfonts/ITGrafloDemo-Regular.woff2') format('woff2'),
+        url('../webfonts/ITGrafloDemo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IT Graflo Demo';
+    src: url('../webfonts/ITGrafloDemo-Italic.woff2') format('woff2'),
+        url('../webfonts/ITGrafloDemo-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Rules for mobile devices (767px and below) */
+@media (max-width: 767px) {
+    body {
+        background-color: deepskyblue;
+    }
+
+    #main-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.88);
+        z-index: 10000;
+        padding: 10px;
+    }
+
+    #menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        width: 50px;
+        height: 50px;
+        padding: 8px;
+        cursor: pointer;
+        border-radius: 5px;
+        position: relative;
+        transition: all .5s ease-out;
+    }
+
+    .hamburger-line {
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 2px;
+        transition: all .4s ease;
+        transform-origin: center;
+    }
+
+    #menu-toggle.active .hamburger-line:nth-child(1) {
+        transform: translateY(11.5px) rotate(45deg);
+    }
+
+    #menu-toggle.active .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle.active .hamburger-line:nth-child(3) {
+        transform: translateY(-11.5px) rotate(-45deg);
+    }
+
+    #nav-menu {
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.88);
+        flex-direction: column;
+    }
+
+    #nav-menu.active {
+        display: flex;
+    }
+
+    #nav-menu li {
+        border-bottom: 1px solid rgba(255, 202, 40, 0.2);
+    }
+
+    #nav-menu li:last-child {
+        border-bottom: none;
+    }
+
+    #nav-menu a {
+        display: block;
+        padding: 15px 20px;
+        color: #fff;
+        font-size: 10px;
+        transition: background-color .4s;
+        text-decoration: none;
+    }
+
+    #nav-menu a:hover {
+        background-color: rgba(255, 255, 255, .1);
+    }
+
+    #nav-menu>li>ul {
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(0, 0, 0, .3);
+    }
+
+    #nav-menu>li:hover>ul,
+    #nav-menu>li:focus-within>ul {
+        display: block;
+    }
+
+    #nav-menu>li>ul li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    #nav-menu>li>ul a {
+        padding-left: 40px;
+        font-size: 15px;
+    }
+
+
+
+    .flex-item {
+        flex: 1 0 90%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    form textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"],
+    form select {
+        width: 98%;
+    }
+
+}
+
+/* Rules for tablets/desktops (768px and above) */
+@media (min-width: 768px) {
+    body {
+        background-color: deepskyblue;
+        background-image: url("../images/bkgd1.jpg");
+    }
+
+    #main-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.85);
+        z-index: 10000;
+        padding: 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.30);
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    #nav-menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.85);
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #nav-menu li {
+        position: relative;
+    }
+
+    #nav-menu>li>a {
+        display: block;
+        padding: 20px 15px;
+        color: #fff;
+        font-size: 10px;
+        transition: background-color .4s, color .4s;
+    }
+
+    #nav-menu>li:hover>a {
+        background-color: rgba(255, 255, 255, 0.2);
+        text-decoration: none;
+    }
+
+    #nav-menu>li>ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.85);
+        min-width: 200px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.30);
+        z-index: 10001;
+    }
+
+    #nav-menu>li:hover>ul {
+        display: block;
+    }
+
+    #nav-menu>li>ul li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    #nav-menu>li>ul li:last-child {
+        border-bottom: none;
+    }
+
+    form textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"],
+    form select {
+        width: 96%;
+    }
+}
+
+.flex-container {
+    justify-content: space-between;
+}
+
+.flex-item {
+    flex: 1 0 25%;
+    border-radius: 7px;
+}
+
+.grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 20px;
+}
+
+.grid-item:nth-child(1) {
+    grid-row: span 3;
+}
+
+.grid-item:nth-child(5) {
+    grid-row: span 2;
+}
+
+.grid-item:nth-child(6) {
+    grid-column: 2 / -1;
+}
+
+
+/* Sidebar Layout Template Styles */
+body.sidebar-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+body.sidebar-layout .sidebar {
+    width: 250px;
+    flex-shrink: 0;
+    padding: 20px;
+}
+
+body.sidebar-layout .sidebar ul li a {
+    display: block;
+    /* Make links fill the sidebar width */
+    color: #fff;
+    /* Sidebar links white? or keep amber */
+    background: rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+}
+
+body.sidebar-layout .sidebar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+}
+
+body.sidebar-layout #container {
+    flex-grow: 1;
+    margin: 40px;
+    width: auto;
+}
+
+/* ---------------------------------------------------------
+IMAGE GALLERY - RESPONSIVE GRID
+---------------------------------------------------------- */
+.gallery {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    grid-template-columns: 1fr;
+}
+
+/*tablet device overide */
+@media (min-width:768px) and (max-width:1024px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*desktop device overide */
+@media (min-width:1024px) and (max-width:1439px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/*device with 1440p px and aboveoveride */
+@media (min-width:1440px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/*CARD STYLING*/
+.gallery .item {
+    background-color: #fff;
+    border-radius: 5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 2px groove #fff;
+}
+
+/*optianially add a border radius to the image*/
+.gallery figcaption {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+    display: flex;
+    gap: .25rem;
+    color: #000;
+}
+
+#nav-menu>li>ul a {
+    display: block;
+    padding: 12px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#nav-menu>li>ul a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f80;
+}
+
+/*Data table styling*/
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/*Form Styling*/
+form {
+    font-size: 20px;
+    font-weight: 600;
+    color: inherit;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Style the form fieldsets*/
+fieldset {
+    background-color: #000;
+    border: 2px groove #ede5ef;
+    border-radius: 15px;
+    margin bottom: 7px;
+}
+
+/*Style the form's required indicator*/
+.required-field {
+    color: #f00;
+    font-weight: 900;
+    font-size: .9em;
+}
+
+/*Style the form labels*/
+form label {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    text-align: left;
+    display: inline;
+}
+
+/*Style the form's input fields for example text fields, password fields, telephone etc*/
+form textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+form select {
+    line-height: 30px;
+    border-radius: 5px;
+    color: #000;
+}
+
+form select {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*Style the form button*/
+form input[type="submit"],
+input[type="reset"],
+input[type="button"],
+form button {
+    background: linear-gradient(to bottom, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%);
+    color: #fff;
+    font-size: 22px;
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 7px;
+    border: thin outset rgba(231, 221, 222, .9);
+}

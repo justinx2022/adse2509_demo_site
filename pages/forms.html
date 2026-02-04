@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSE2509 Demosite Forms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.8.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <nav id="main-nav">
+        <button id="menu-toggle" aria-label="Toggle Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <ul id="nav-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="text-formatting.html">Text Formatting</a></li>
+            <li><a href="lists.html">Lists</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="tables.html">Tables</a></li>
+            <li><a href="forms.html">Forms</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="#">CSS</a>
+                <ul>
+                    <li><a href="transitions.html">Transitions</a></li>
+                    <li><a href="tranformations.html">Transformations</a></li>
+                    <li><a href="animations.html">Animations</a></li>
+                </ul>
+            </li>
+            <li><a href="pagelayout.html">CSS Flexbox and Grid Layout</a></li>
+
+            <li><a href="#">JS</a>
+                <ul>
+                    <li><a href="js_pages/js_intro.html">JS INTRO</a></li>
+                    <li><a href="js_pages/js_selection.html">JS SELECTION</a></li>
+                    <li><a href="js_pages/js_intro.html">JS INTRO</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <h3 class="social-heading">Follow us on social media</h3>
+        <div style="text-align: center; margin-bottom: 30px;">
+            <a href="#" target="_blank" title="Follow us on LinkedIn">Linkedin</a>
+            <a href="#" target="_blank" title="Subscribe to our YouTube channel">youtube</a>
+            <a href="#" target="_blank" title="Check out our GitHub">github</a>
+            <a href="#" target="_blank" title="Follow us on X">x</a>
+            <a href="#" target="_blank" title="Follow us on facebook">facebook</a>
+            <a href="#" target="_blank" title="Follow us on instagram">instagram</a>
+            <a href="#" target="_blank" title="View our behance portfolio">behance</a>
+        </div>
+
+        <h1 class="page-heading">ADSE DEMOSITE 2509</h1>
+
+        <p>An HTML form in an interactive tool used in your webpage that is made up of various controls used to collect
+            data from your website&rsquo;s visitors.The information is validated,then sent to the server for further
+            processing and storage.Examples of commonly used forms are registration forms and login forms</p>
+        <p>An example of a registration form is given below. The form will be used to collect the details of a
+            prospective employee</p>
+        <form method="post" name="frmRegister" id="frmRegister" title="PLEASE ENTER YOUR DETAILS"
+            accept-charset="utf-8">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <p>
+                    <label for="txtFirstName"> First Name : <span class="required-field">*</span></label>
+                    <input type="text" autofocus form="frmRegister" id="txtFirstName" name="txtFirstName" tabindex="10"
+                        placeholder="Enter your first name" title="Please enter your first name" required />
+                </p>
+                <p>
+                    <label for="txtLastName"> Last Name : <span class="required-field">*</span></label>
+                    <input type="text" id="txtLastName" name="txtLastName" tabindex="20"
+                        placeholder="Enter your last name" title="Please enter your last name" required />
+                </p>
+                <p>
+                    <label for="dtpBirthdate"> Birthdate :<span class="required-field">*</span></label>
+                    <input type="date" id="dtpBirthdate" name="dtpBirthdate" tabindex="30"
+                        placeholder="Enter your birthdate" title="Please enter your birthdate" />
+                </p>
+                <p>
+                    <label> Gender :<span class="required-field">*</span></label>
+                    <input type="radio" id="txtGender" form="frmRegister" id="rdoMale" name="txtGender" tabindex="20"
+                        title="Male Gender" />
+                    <label for="rdoMale">Male</label>
+                    <input type="radio" id="txtGender" form="frmRegister" id="rdoFemale" name="txtGender" tabindex="20"
+                        title="Female Gender" />
+                    <label for="rdoFemale">Female</label>
+                </p>
+                <p>
+                    <label for="txtMaritalStatus"> Marital Status :<span class="required-field">*</span></label>
+                    <input type="text" form="frmRegister" id="txtMaritalStatus" name="txtMaritalStatus" tabindex="20"
+                        placeholder="Enter your marital status" title="Please enter your marital status"
+                        list="dtMaritalStatus" />
+                    <datalist id="dtMaritalStatus">
+                        <option value="Single"></option>
+                        <option value="Married"></option>
+                        <option value="Divorced"></option>
+                        <option value="Widowed"></option>
+                        <option value="Separated"></option>
+                        <option value="In a relationship"></option>
+                    </datalist>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Account Details</legend>
+                <p>
+                    <label for="txtUsername">Username :<span class="required-field">*</span></label>
+                    <input type="text" form="frmRegister" id="txtUsername" name="txtUsername" tabindex="70"
+                        placeholder="Enter your username" title="Please enter your username" required />
+                </p>
+                <p>
+                    <label for="Password">Password :<span class="required-field">*</span></label>
+                    <input type="password" form="frmRegister" id="Password" name="txtPassword" tabindex="80"
+                        placeholder="S3cret Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^*_]).{8,}$"
+                        title="Please enter your password" required />
+                </p>
+                <p>
+                    <label for="ConfirmPassword">Confirm Password :<span class="required-field">*</span></label>
+                    <input type="password" form="frmRegister" id="ConfirmPassword" name="txtConfirmPassword"
+                        tabindex="90" placeholder="S3cret Password"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^*_]).{8,}$"
+                        title="Please confirm your password" required />
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Details</legend>
+                <p>
+                    <label for="Email">Email :</label>
+                    <input type="email" form="frmRegister" id="Email" name="txtEmail" tabindex="100"
+                        placeholder="Enter your email" title="Please enter your email" required />
+                </p>
+                <p>
+                    <label for="Phone">Phone :</label>
+                    <input type="tel" form="frmRegister" id="Phone" name="txtPhone" tabindex="110"
+                        placeholder="Enter your phone number" title="Please enter your phone number" required />
+                </p>
+                <p>
+                    <label for="txtPostalAddress">Postal Address :</label>
+                    <input type="text" form="frmRegister" id="PostalAddress" name="txtPostalAddress" tabindex="120"
+                        placeholder="Enter your postal address" title="Please enter your postal address" required />
+                </p>
+                <p>
+                    <label for="txtCity">City :</label>
+                    <input type="text" form="frmRegister" id="City" name="txtCity" tabindex="130" placeholder="Nairobi"
+                        title="Please enter your city" required />
+                </p>
+                <p>
+                    <label for="sltCountry"> Country:</label>
+                    <select form="frmRegister" id="sltCountry" name="sltCountry" tabindex="140"
+                        title="Please select your country" required>
+                        <option value="South Africa">South Africa</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option value="Somalia">Somalia</option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Other Details</legend>
+                <p>
+                    <label>Hobbies:</label><br />
+                    <input type="checkbox" form="frmRegister" id="Hobbies" name="Hobbies" value="Reading" />
+                    <label for="Hobbies">Reading</label>
+                    <input type="checkbox" form="frmRegister" id="Hobbies" name="Hobbies" value="Traveling" />
+                    <label for="Hobbies">Traveling</label>
+                    <input type="checkbox" form="frmRegister" id="Hobbies" name="Hobbies" value="Swimming" />
+                    <label for="Hobbies">Swimming</label>
+                    <input type="checkbox" form="frmRegister" id="Hobbies" name="Hobbies" value="Gaming" />
+                    <label for="Hobbies">Gaming</label>
+                </p>
+            </fieldset>
+            <p style="text-align: center; margin-top: 20px;">
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+            </p>
+
+
+            <div class="page-footer">
+                ADSE2509 copyright &copy; 2024 - 2026<br>
+                Designed by <a href="#">Justin Odhiambo</a>.
+            </div>
+    </div>
+    <script src="../js/main.js"></script>
+    <script async src="../js/responsive_nav.js"></script>
+</body>
+
+</html>
