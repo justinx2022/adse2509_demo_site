@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSE2509 Demosite - Flex and Grid Layout</title>
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .flex-items,
+        .grid-items {
+            background-color: gray;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            border: 1px solid #333;
+        }
+
+        .flex-items {
+            margin: 5px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        @media (max-width: 767px) {
+            .flex-items {
+                flex: 1 0 90%;
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .flex-container {
+                justify-content: space-between;
+            }
+
+            .flex-items {
+                flex: 1 0 25%;
+                border-radius: 7px;
+            }
+
+            .grid-container {
+                grid-template-columns: repeat(3, 1fr);
+                grid-auto-rows: minmax(100px, auto);
+            }
+
+            .grid-items:nth-child(1) {
+                grid-row: span 3;
+                background-color: #ff4444;
+            }
+
+            .grid-items:nth-child(5) {
+                grid-row: span 2;
+                background-color: #33cc33;
+            }
+
+            .grid-items:nth-child(6) {
+                grid-column: 2 / -1;
+                background-color: #3399ff;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="main-nav">
+        <div id="menu-toggle">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+
+        <ul id="nav-menu">
+            <li><a href="../index.html">Home</a></li>
+
+            <li><a href="text-formatting.html">Text Formatting</a></li>
+            <li><a href="lists.html">Lists</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="tables.html">Tables</a></li>
+            <li><a href="forms.html">Forms</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="images.html">Images</a></li>
+
+            <li><a href="page_layout.html">Page Layouts</a></li>
+
+            <li><a href="#">CSS</a>
+                <ul>
+                    <li><a href="css_pages/animation.html">Animation</a></li>
+                    <li><a href="css_pages/transformations.html">Transformations</a></li>
+                    <li><a href="css_pages/transitions.html">Transitions</a></li>
+                </ul>
+            </li>
+            <li><a href="#">JS</a>
+                <ul>
+                    <li><a href="js_pages/js_intro.html">JS Intro</a></li>
+                    <li><a href="js_pages/js_selection.html">JS Selection</a></li>
+                    <li><a href="js_pages/js-calculator.html">Js Calculator</a></li>
+                    <li><a href="js_pages/js_objects.html">Js Objects</a></li>
+                    <li><a href="js_pages/js-localstorage.html">Js Local Storage</a></li>
+                    <li><a href="js_pages/canvas-drawline.html">Canvas Line</a></li>
+                    <li><a href="js_pages/canvas_drawarc.html">Canvas Arc</a></li>
+                    <li><a href="js_pages/canvas-drawcircle.html">Canvas Circle</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <h2 class="social-heading">Follow us on social media</h2>
+        <div class="social-heading">
+            <a href="#" target="_blank" title="Youtube">Youtube</a>
+            <a href="#" target="_blank" title="LinkedIn">LinkedIn</a>
+            <a href="#" target="_blank" title="Instagram">Instagram</a>
+            <a href="#" target="_blank" title="TikTok">TikTok</a>
+            <a href="#" target="_blank" title="Facebook">Facebook</a>
+            <a href="#" target="_blank" title="Twitter">Twitter</a>
+        </div>
+
+        <h1 class="page-heading">
+            CSS Flex and Grid Layout
+            <span class="page-heading-underline"></span>
+        </h1>
+
+        <h2 class="section-heading">Flexbox Layout</h2>
+        <p>The flexbox layout is a one-dimensional layout for distributing space between items...</p>
+
+        <div class="flex-container">
+            <div class="flex-items">Item 1</div>
+            <div class="flex-items">Item 2</div>
+            <div class="flex-items">Item 3</div>
+            <div class="flex-items">Item 4</div>
+            <div class="flex-items">Item 5</div>
+        </div>
+
+        <h2 class="section-heading">Grid Layout</h2>
+        <p>A grid is a set of intersecting horizontal and vertical lines defining rows and columns...</p>
+
+        <div class="grid-container">
+            <div class="grid-items">Item 1 (Span 3 Rows)</div>
+            <div class="grid-items">Item 2</div>
+            <div class="grid-items">Item 3</div>
+            <div class="grid-items">Item 4</div>
+            <div class="grid-items">Item 5 (Span 2 Rows)</div>
+            <div class="grid-items">Item 6 (Span 2 Cols)</div>
+            <div class="grid-items">Item 7</div>
+        </div>
+
+        <footer class="page-footer">
+            ADSE2509 Copyright 2025 - &copy;
+            <span id="currYear"></span><br>
+            Designed by
+            <a href="https://adandesigns.example" target="_blank">Adan Designs</a>
+        </footer>
+    </div>
+
+    <script>
+        // 1. Set the Year
+        document.getElementById("currYear").textContent = new Date().getFullYear();
+
+        // 2. Toggle Mobile Menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        if (menuToggle && navMenu) {
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
+    </script>
+
+</body>
+
+</html>

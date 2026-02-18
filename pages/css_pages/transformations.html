@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSE2509 Demosite - CSS Transformations</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+
+    <style>
+        #transformations {
+            width: 150px;
+            height: 150px;
+            background-color: #f00;
+            transition: all 2s ease-out;
+            margin-bottom: 20px;
+        }
+
+        #transformations:hover {
+            background-color: #f80;
+            transform: matrix(0.5, -0.125, 0.028, 0.5, 0, 0);
+        }
+
+        .btn {
+            background-color: #00a5ff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 1s ease-out;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #0074b2;
+            color: purple;
+            transform: rotate3d(3, 1, 4, 45deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="main-nav">
+        <div id="menu-toggle">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+
+        <ul id="nav-menu">
+            <li><a href="../../index.html">Home</a></li>
+
+            <li><a href="../text-formatting.html">Text Formatting</a></li>
+            <li><a href="../lists.html">Lists</a></li>
+            <li><a href="../links.html">Links</a></li>
+            <li><a href="../tables.html">Tables</a></li>
+            <li><a href="../forms.html">Forms</a></li>
+            <li><a href="../multimedia.html">Multimedia</a></li>
+            <li><a href="../images.html">Images</a></li>
+
+            <li><a href="../page_layout.html">Page Layouts</a></li>
+
+            <li><a href="#">CSS</a>
+                <ul>
+                    <li><a href="animation.html">Animation</a></li>
+                    <li><a href="transformations.html">Transformations</a></li>
+                    <li><a href="transitions.html">Transitions</a></li>
+                </ul>
+            </li>
+            <li><a href="#">JS</a>
+                <ul>
+                    <li><a href="../js_pages/js_intro.html">JS Intro</a></li>
+                    <li><a href="../js_pages/js_selection.html">JS Selection</a></li>
+                    <li><a href="../js_pages/js-calculator.html">Js Calculator</a></li>
+                    <li><a href="../js_pages/js_objects.html">Js Objects</a></li>
+                    <li><a href="../js_pages/js-localstorage.html">Js Local Storage</a></li>
+                    <li><a href="../js_pages/canvas-drawline.html">Canvas Line</a></li>
+                    <li><a href="../js_pages/canvas_drawarc.html">Canvas Arc</a></li>
+                    <li><a href="../js_pages/canvas-drawcircle.html">Canvas Circle</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="container">
+        <h2 class="social-heading">Follow us on social media</h2>
+        <div class="social-heading">
+            <a href="#" target="_blank" title="LinkedIn">LinkedIn</a>
+            <a href="#" target="_blank" title="Instagram">Instagram</a>
+            <a href="#" target="_blank" title="TikTok">TikTok</a>
+            <a href="#" target="_blank" title="Facebook">Facebook</a>
+            <a href="#" target="_blank" title="Twitter">Twitter</a>
+        </div>
+
+        <h1 class="page-heading">
+            CSS Transformations
+            <span class="page-heading-underline"></span>
+        </h1>
+
+        <p>CSS Transformations let you change an element's size, shape, visibility, and position, to name a few.<br>
+            Kindly hover your mouse over the red square or buttons below to see how CSS Transformations work.</p>
+
+        <div id="transformations"></div>
+
+        <input type="button" class="btn" value="Button 1">&nbsp;&nbsp;
+        <input type="button" class="btn" value="Button 2">
+
+        <footer class="page-footer">
+            ADSE2509 Copyright 2025 - &copy;
+            <span id="currYear"></span><br>
+            Designed by
+            <a href="https://adandesigns.example" target="_blank">Adan Designs</a>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById("currYear").textContent = new Date().getFullYear();
+
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        if (menuToggle && navMenu) {
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,7 +1,7 @@
 //Javascript document to handle the click event in the hamburger icon in our site
 (function () {
-    let menuToggle = document.getElementById('meny-toggle');
-    let navMenu = document.getElementById('nav-men');
+    let menuToggle = document.getElementById('menu-toggle');
+    let navMenu = document.getElementById('nav-menu');
 
     if (menuToggle && navMenu) {
         menuToggle.addEventListener('click', function () {

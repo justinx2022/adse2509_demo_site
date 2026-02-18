@@ -5,12 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADSE2509 Demosite 2509</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.8.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/main.css">
-    //Prompt the user for their name using a JavaScript prompt
-    <script defer>
-        let username = prompt("Please enter your name");
-    </script>
+    <!--Link to the array Javascript file-->
+    <script src="../../js/js_calculator.js"></script>
 </head>
 
 <body>
@@ -64,24 +61,57 @@
             <a href="#" target="_blank" title="View our behance portfolio">behance</a>
         </div>
 
-        <h1 class="page-heading">Introduction to JavaScript</h1>
+        <h1 class="page-heading">Simple JavaScript Calculator</h1>
 
-        <p>This page introduces us to our first script</p>
-        <div id="js-content">
+        <p>A simple calculator that can perform addition, subtraction, multiplication, division, and square root
+            operations.</p>
+        <form method="post" id="frmCalculator" accept-charest="UTF-8">
+            <fieldset>
+                <legend>Simple Calculator</legend>
+                <p>
+                    <label for="txtFirstNum">First Number:<span class="required-field">*</span></label>
+                    <input type="number" id="txtFirstNum" autofocus tabindex="10" form="frmCalculator"
+                        title="Please enter a number" required>
+                </p>
+                <p>
+                    <label for="txtSecondNum">Second Number:<span class="required-field">*</span></label>
+                    <input type="number" id="txtSecondNum" tabindex="20" form="frmCalculator"
+                        title="Please enter a number" required>
+                </p>
+                <p>
+                    <label for="sltOperation">Select an arithmetic operator:<span
+                            class="required-field">*</span></label>
+                    <select id="sltOperation" tabindex="30" form="frmCalculator" name="sltOperation" required
+                        title="Please select an arithmentic operation.">
+                        <option selected>Select an operation</option>
+                        <option value="+">Addition</option>
+                        <option value="-">Subtraction</option>
+                        <option value="*">Multiplication</option>
+                        <option value="/">Division</option>
+                        <option value="%">Modulus</option>
+                        <option value="^">Exponentiation</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="txtResult">Result:</label>
+                    <input type="text" id="txtResult" name="txtResult" readonly disabled form="frmCalculator"
+                        stlyle="color: #fff">
+                </p>
+                <p>
+                    <input type="button" value="btnCalculate" name="btnCalculate" form="frmCalculator" tabindex="40"
+                        value="Calculate" onClick="calculateResult()">
+                </p>
+            </fieldset>
 
-        </div><br />
-        <script>
-            //Append greeting message to the js-content div
-            let greeting = "Hello " + username + "! from JavaScript";
-            document.getElementById("js-content").innerHTML = greeting;
-        </script>
-
+        </form>
         <div class="page-footer">
             ADSE2509 copyright &copy; 2024 - 2026<br>
             Designed by <a href="#">Justin Odhiambo</a>.
         </div>
     </div>
     <script src="../../js/main.js"></script>
+
+    <!--link to the JS ti display and hide the navigation men -->
     <script async src="../../js/responsive_nav.js"></script>
 </body>
 

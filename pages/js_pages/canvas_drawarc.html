@@ -4,13 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADSE2509 Demosite 2509</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.8.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Canvas Drawing Arcs - ADSE2509</title>
     <link rel="stylesheet" href="../../css/main.css">
-    //Prompt the user for their name using a JavaScript prompt
-    <script defer>
-        let username = prompt("Please enter your name");
-    </script>
+    <!--Link to the canvas Javascript file-->
+    <script async src="../../js/canvas_drawarc.js"></script>
 </head>
 
 <body>
@@ -64,24 +61,22 @@
             <a href="#" target="_blank" title="View our behance portfolio">behance</a>
         </div>
 
-        <h1 class="page-heading">Introduction to JavaScript</h1>
+        <h1 class="page-heading">Canvas Drawing Arcs</h1>
 
-        <p>This page introduces us to our first script</p>
-        <div id="js-content">
+        <p>This page illustrates how to draw an arc on an HTML5 canvas using JavaScript.</p>
 
-        </div><br />
-        <script>
-            //Append greeting message to the js-content div
-            let greeting = "Hello " + username + "! from JavaScript";
-            document.getElementById("js-content").innerHTML = greeting;
-        </script>
+        <div style="text-align: center; margin-top: 30px;">
+            <canvas id="canvasArc" width="400" height="200"
+                style="border: 1px solid #ff0000; background-color: #002244;"></canvas>
+        </div>
 
         <div class="page-footer">
             ADSE2509 copyright &copy; 2024 - 2026<br>
-            Designed by <a href="#">Justin Odhiambo</a>.
+            Designed by <a href="#">Justin Odhiambo.</a>.
         </div>
     </div>
-    <script src="../../js/main.js"></script>
+
+    <!--link to the JS to display and hide the navigation menu -->
     <script async src="../../js/responsive_nav.js"></script>
 </body>
 

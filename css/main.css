@@ -18,12 +18,14 @@ body {
 #container {
     max-width: 900px;
     margin: 40px auto;
-    background: rgba(20, 20, 30, 0.85);
+    background: #0099ff;
+    /* Blue background */
     backdrop-filter: blur(10px);
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
 }
 
 .flex-container {
@@ -51,10 +53,25 @@ body {
 }
 
 .social-heading {
-    font-family: 'IT Graflo Demo';
+    font-family: 'IT Graflo Demo', sans-serif;
     color: #ff9900;
     font-weight: 800;
     text-align: center;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: #0044cc;
+    /* Darker blue for visibility on blue background */
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.social-links a:hover {
+    color: #fff;
+    text-decoration: underline;
 }
 
 
@@ -237,9 +254,17 @@ ul li a:hover {
         padding: 0;
         position: absolute;
         top: 100%;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.88);
+        left: 0;
+        /* Align to left edge */
+        width: 100%;
+        /* Span full width */
+        background-color: rgba(0, 0, 0, 0.95);
+        /* Slightly darker for better visibility */
         flex-direction: column;
+        max-height: calc(100vh - 70px);
+        /* Limit height to viewport height minus header */
+        overflow-y: auto;
+        /* Enable vertical scrolling */
     }
 
     #nav-menu.active {
@@ -299,6 +324,12 @@ ul li a:hover {
         grid-template-columns: 1fr;
     }
 
+    #container {
+        width: 95%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
     form textarea,
     input[type="text"],
     input[type="password"],
@@ -340,7 +371,10 @@ ul li a:hover {
         margin: 0;
         padding: 0;
         background-color: rgba(0, 0, 0, 0.85);
-        justify-content: space-between;
+        justify-content: center;
+        /* Center items to bring JS tab into view */
+        gap: 20px;
+        /* Add spacing between items */
         align-items: center;
         flex-wrap: wrap;
     }
@@ -559,7 +593,7 @@ fieldset {
     background-color: #000;
     border: 2px groove #ede5ef;
     border-radius: 15px;
-    margin bottom: 7px;
+    margin-bottom: 7px;
 }
 
 /*Style the form's required indicator*/
